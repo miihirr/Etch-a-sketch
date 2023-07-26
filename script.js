@@ -55,3 +55,11 @@ let black = document.querySelector('#black');
 black.addEventListener('click',()=>{
     color='black';
 });
+let erase = document.querySelector('#erase');
+erase.addEventListener('click',()=>{
+    let boxes = document.querySelectorAll('.box');
+    boxes.forEach(box=>{
+        box.style.backgroundColor='white';
+        box.style.border='1px solid lightgray';
+    })
+});
